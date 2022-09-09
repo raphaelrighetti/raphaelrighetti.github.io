@@ -4,30 +4,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projetos | Raphael Righetti</title>
+  <link rel="shortcut icon" href="https://github.com/raphaelrighetti.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Projects | Raphael Righetti</title>
 </head>
 <body>
-  <h1>My Projects</h1>
-  <ul>
-    <li>
-      <a 
-        title="Link to Interactive Card Details Form" 
-        href="https://raphaelrighetti.github.io/interactive-card-details-form-frontend-mentor/" 
-        target="_blank"
-      >
-      Interactive Card Details Form
-      </a>
-    </li>
-    <li>
-      <a 
-        title="Link to Advice Generator App" 
-        href="https://raphaelrighetti.github.io/advice-generator-app-frontend-mentor/" 
-        target="_blank"
-      >
-      Advice Generator App
-      </a>
-    </li>
-  </ul>
-  <!-- git@github.com:raphaelrighetti/raphaelrighetti.github.io.git -->
+  <header aria-label="Page Header" class="page-header">
+    <h1 class="page-title">Raphael Righetti;</h1>
+    <nav aria-label="Social Media Nav">
+      <ul class="socials-ul">
+        <li class="socials-li">
+          <a class="socials-link" href="https://www.linkedin.com/in/raphael-righetti-ramos/" title="Link to my LinkedIn" target="_blank">
+            <img class="socials-logo" atl="LinkedIn Logo" src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+          </a>
+        </li>
+        <li class="socials-li">
+          <a class="socials-link" href="https://github.com/raphaelrighetti" title="Link to my Github" target="_blank">
+            <img class="socials-logo" atl="Github Logo" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main aria-label="Projects Section" class="main">
+    <h2 class="main-title">My Projects</h1>
+    <nav aria-label="Projects Nav" class="projects">
+      <div class="projects-buttons">
+        <button class="projects-button previous" value="-1">&lsaquo;</button>
+        <button class="projects-button next" value="1">&rsaquo;</button>
+      </div>
+      <ul class="projects-ul">
+        <li class="projects-li active">
+          <h3 class="project-title">Interactive Card Details Form</h3>
+          <img class="project-img" src="./img/card-details-screenshot.png" alt="Interactive Card Details Form Screenshot">
+          <a 
+            class="project-link"
+            title="Link to Interactive Card Details Form" 
+            href="https://raphaelrighetti.github.io/interactive-card-details-form-frontend-mentor/" 
+            target="_blank"
+          >
+            Check It Out
+          </a>
+        </li>
+        <li class="projects-li">
+          <h3 class="project-title">Advice Generator App</h3>
+          <img class="project-img" src="./img/advice-generator-screenshot.png" alt="Advice Generator App Screenshot">
+          <a 
+            class="project-link"
+            title="Link to Advice Generator App" 
+            href="https://raphaelrighetti.github.io/advice-generator-app-frontend-mentor/" 
+            target="_blank"
+          >
+            Check It Out
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </main>
+  <script src="./js/js.js"></script>
 </body>
 </html>
