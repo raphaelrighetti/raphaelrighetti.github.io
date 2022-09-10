@@ -27,12 +27,17 @@
 }
 
 body {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75px 2.5% calc(97.5% - 75px);
   width: 100vw;
   height: 100vh;
   font-family: var(--generic-font);
+  background-color: var(--white);
 }
 
 .page-header {
+  grid-row: 1 / 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,7 +50,7 @@ body {
 
 .page-title {
   font-family: var(--main-title-font);
-  font-size: 2rem;
+  font-size: calc(1vw + 1.5rem);
   letter-spacing: .35rem;
 }
 
@@ -77,12 +82,13 @@ body {
 }
 
 .main {
+  grid-row: 3 / 3;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 7.5% 92.5%;
   width: 100%;
   height: calc(100% - 75px);
-  padding: 2rem;
+  padding: 0 2rem;
   box-sizing: border-box;
   background-color: var(--white);
 }
@@ -90,26 +96,33 @@ body {
 .main-title {
   grid-row: 1 / 2;
   font-family: var(--title-font);
-  font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.main-title::before {
+  content: '- ';
 }
 
 .projects {
   grid-row: 2 / 2;
+  position: relative;
   width: 100%;
   height: 100%;
-  padding: .5rem 2rem;
+  padding: 1rem 2rem;
   box-sizing: border-box;
   background-color: var(--purple);
   box-shadow: .75rem .75rem 0 var(--greyish-purple);
 }
 
 .projects-buttons {
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: .65rem;
+  right: 2rem;
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  width: fit-content;
+  z-index: 1;
 }
 
 .projects-button {
@@ -118,12 +131,17 @@ body {
   align-items: center;
   width: 30px;
   height: 25px;
+  margin-left: .25rem;
   font-weight: 500;
   font-size: 2.5rem;
   cursor: pointer;
   background: none;
   border: none;
   color: var(--blueish-purple);
+}
+
+.projects-button:first-child {
+  margin-left: 0;
 }
 
 .projects-ul {
@@ -139,7 +157,7 @@ body {
   grid-template-rows: repeat(10, 10%);
   width: 100%;
   height: 100%;
-  padding: 2rem;
+  padding: 0 2rem;
   box-sizing: border-box;
   visibility: hidden;
 }
@@ -151,7 +169,7 @@ body {
 .project-title {
   grid-row: 1 / 1;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: calc(.5vw + .85rem);
   text-align: center;
   color: var(--white);
 }
@@ -176,4 +194,36 @@ body {
   border-radius: .5rem;
   color: var(--white);
   text-decoration: none;
+}
+
+@media screen and (max-width: 475px) {
+  .main-title {
+    margin-left: 0;
+  }
+
+  .projects {
+    padding: .5rem 1rem;
+  }
+
+  .projects-buttons {
+    top: 1%;
+    right: 1rem;
+  }
+
+  .projects-button {
+    font-size: 2rem;
+  }
+
+  .projects-ul {
+    margin-top: 15%;
+    height: 85%;
+  }
+
+  .projects-li {
+    padding: 0 2rem;
+  }
+
+  .project-link {
+    width: 85%;
+  }
 }
