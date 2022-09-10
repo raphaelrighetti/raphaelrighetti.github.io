@@ -196,6 +196,12 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .projects-button {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 475px) {
   .main-title {
     margin-left: 0;
@@ -206,8 +212,12 @@ body {
   }
 
   .projects-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     top: 1%;
-    right: 1rem;
+    right: 2.5%;
+    width: 95%;
   }
 
   .projects-button {
