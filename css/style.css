@@ -212,12 +212,9 @@ body {
   }
 
   .projects-buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     top: 1%;
-    right: 2.5%;
-    width: 95%;
+    right: 1rem;
+    width: fit-content;
   }
 
   .projects-button {
