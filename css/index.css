@@ -1,0 +1,30 @@
+:root {
+    --white: #F1F6F9;
+    --light-blue: #9BA4B5;
+    --medium-blue: #394867;
+    --dark-blue: #9BA4B5;
+}
+
+html {
+    box-sizing: border-box;
+    height: fill-available;
+    height: -webkit-fill-available;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    min-height: fill-available;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
