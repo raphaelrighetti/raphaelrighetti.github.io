@@ -1,164 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-$primary-color: #fff;
-$background-color: #969696;
 $normal-font-size: 1rem;
-$hover-title-font-size: calc($normal-font-size + .05rem);
-$normal-title-font-size: 1.5rem;
-$hover-title-font-size: calc($normal-title-font-size + .05rem);
+$normal-font-size-hover: calc($normal-font-size + .2rem);
+$title-font-size: 1.6rem;
+$title-font-size-hover: calc($title-font-size + .2rem);
 
 body {
     min-height: 100svh;
-    font-family: 'Montserrat', sans-serif;
-    font-size: $normal-font-size;
-    line-height: 1.25rem;
-}
-
-.section-item {
-    a {
-        color: black;
-        font-size: $normal-title-font-size;
-        transition: 200ms;
-    
-        &:hover {
-            font-size: $hover-title-font-size;
-            color: green;
-        }
-    }
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2rem;
 }
 
 .main-header {
-    display: grid;
-    grid-template-rows: 6rem;
-    grid-template-columns: 40% 60%;
-    align-items: center;
-    background-color: $background-color;
-}
-
-.main-title {
-    margin-left: 1rem;
-    grid-column: 1/2;
-    font-size: $normal-title-font-size;
-}
-
-.sections {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    grid-column: 2/2;
-}
-
-.container {
-    height: 80svh;
-}
-
-.sobre-mim {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
 
     .title {
-        font-size: $normal-title-font-size;
+        font-size: $title-font-size;
+        font-weight: 700;
+        margin-bottom: .5rem;
+
+        span {
+            font-size: $normal-font-size;
+            font-weight: 300;
+        }
     }
 
-    .content {
-        text-align: center;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 50% 25%;
-        align-items: center;
-        height: 80%;
-        margin-block: auto;
+    .subtitle {
+        font-size: $normal-font-size;
+        font-weight: 300;
+        font-style: italic;
 
-        .title {
-            grid-column: 1/2;
-            grid-row: 1/2;
-
-            span {
-                font-size: $normal-font-size;
-            }
-        }
-
-        .description {
-            grid-row: 2/3;
-            width: 75%;
-            margin-inline: auto;
-        }
-
-        .tecnologies {
-            grid-column: 1/2;
-            grid-row: 2/4;
-            width: 65%;
-            margin-inline: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            column-gap: 1.5rem;
-            row-gap: 1rem;
-            font-size: 5rem;
+        span {
+            font-weight: 700;
         }
     }
 }
-
-// .sobre-mim {
-//     display: grid;
-//     grid-template-columns: 50% 50%;
-//     grid-template-rows: 100%;
-//     align-items: center;
-
-//     .title {
-//         font-size: $normal-title-font-size;
-//     }
-
-//     .content {
-//         grid-column: 1/2;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         align-items: center;
-
-//         .title {
-//             margin-bottom: .5rem;
-//         }
-
-//         .subtitle {
-//             margin-bottom: 1.2rem;
-//         }
-
-//         .description {
-//             text-align: center;
-//             width: 75%;
-//         }
-//     }
-
-//     .tecnologies-i-use {
-//         text-align: center;
-//         height: 80%;
-//         margin-block: auto;
-//         display: grid;
-//         grid-template-columns: 100%;
-//         grid-template-rows: 25% 50% 25%;
-//         align-items: center;
-
-//         .title {
-//             grid-column: 1/2;
-//             grid-row: 1/2;
-//         }
-
-//         .tecnologies {
-//             grid-column: 1/2;
-//             grid-row: 2/3;
-//             width: 75%;
-//             margin-inline: auto;
-//             display: flex;
-//             flex-wrap: wrap;
-//             justify-content: center;
-//             align-items: center;
-//             gap: 1rem;
-    
-//             font-size: 4rem;
-//         }
-//     }
-// }
