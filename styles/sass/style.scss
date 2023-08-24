@@ -7,7 +7,7 @@ $title-font-size: 1.6rem;
 $title-font-size-hover: calc($title-font-size + .2rem);
 
 body {
-    min-height: 100svh;
+    height: 100svh;
     font-family: 'Open Sans', sans-serif;
     line-height: 1.35rem;
     color: $main-color;
@@ -15,12 +15,19 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 1fr 4fr 1fr;
     align-items: center;
+    overflow: hidden;
 }
 
 video {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .video-wrapper {
@@ -112,8 +119,15 @@ video {
         .section {
             color: $main-color;
 
-            a {
+            button {
+                text-transform: uppercase;
+                font-size: $title-font-size;
                 color: $main-color;
+                transition: 200ms;
+
+                &:hover {
+                    font-size: $title-font-size-hover;
+                }
             }
         }
     }

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/css/reset.css">
     <link rel="stylesheet" href="./styles/css/style.css">
+    <link rel="stylesheet" href="./styles/css/section-container.css">
+    <link rel="stylesheet" href="./styles/css/habilidades.css">
     <title>Portfólio - Raphael Righetti Ramos</title>
 </head>
 
@@ -32,24 +34,58 @@
         </p>
     </section>
 
+    <section class="habilidades section-container">
+        <header class="section-header">
+            <h2>Habilidades</h2>
+            <button class="hide-button" value="1"><img src="./img/seta-esconder.png"
+                    alt="Ícone de seta para baixo"></button>
+        </header>
+    </section>
+
+    <section class="projetos section-container">
+        <header class="section-header">
+            <h2>Projetos</h2>
+            <button class="hide-button" value="2"><img src="./img/seta-esconder.png"
+                    alt="Ícone de seta para baixo"></button>
+        </header>
+    </section>
+
+    <section class="experiencia section-container">
+        <header class="section-header">
+            <h2>Experiência</h2>
+            <button class="hide-button" value="3"><img src="./img/seta-esconder.png"
+                    alt="Ícone de seta para baixo"></button>
+        </header>
+    </section>
+
+    <section class="contato section-container">
+        <header class="section-header">
+            <h2>Contato</h2>
+            <button class="hide-button" value="4"><img src="./img/seta-esconder.png"
+                    alt="Ícone de seta para baixo"></button>
+        </header>
+    </section>
+
     <footer class="main-footer">
         <nav>
             <ul class="sections">
                 <li class="section">
-                    <a href="#" target="_blank" title="Link para a sessão Habilidades">Habilidades</a>
+                    <button value="1" data-js="show-section-button">Habilidades</button>
                 </li>
                 <li class="section">
-                    <a href="#" target="_blank" title="Link para a sessão Projetos">Projetos</a>
+                    <button value="2" data-js="show-section-button">Projetos</button>
                 </li>
                 <li class="section">
-                    <a href="#" target="_blank" title="Link para a sessão Experiência">Experiência</a>
+                    <button value="3" data-js="show-section-button">Experiência</button>
                 </li>
                 <li class="section">
-                    <a href="#" target="_blank" title="Link para a sessão Contato">Contato</a>
+                    <button value="4" data-js="show-section-button">Contato</button>
                 </li>
             </ul>
         </nav>
     </footer>
+
+    <script src="./js/showSection.js"></script>
 </body>
 
 </html>
