@@ -39,4 +39,8 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=reset.css.map */

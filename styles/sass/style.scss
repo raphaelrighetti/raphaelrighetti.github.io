@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+$main-color: #fff;
 $normal-font-size: 1rem;
 $normal-font-size-hover: calc($normal-font-size + .2rem);
 $title-font-size: 1.6rem;
@@ -8,12 +9,34 @@ $title-font-size-hover: calc($title-font-size + .2rem);
 body {
     min-height: 100svh;
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.2rem;
+    line-height: 1.35rem;
+    color: $main-color;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 4fr 1fr;
+    align-items: center;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.video-wrapper {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .main-header {
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: center;
-    margin-top: 2rem;
 
     .title {
         font-size: $title-font-size;
@@ -33,6 +56,65 @@ body {
 
         span {
             font-weight: 700;
+        }
+    }
+}
+
+.sobre-mim {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    width: 75%;
+    margin-inline: auto;
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+
+    p {
+        font-size: $normal-font-size;
+        max-width: 678px;
+        margin-inline: auto;
+
+        span {
+            font-weight: 700;
+            font-size: $normal-font-size-hover;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.main-footer {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    color: $main-color;
+    font-size: $title-font-size;
+    text-transform: uppercase;
+    text-decoration-line: none;
+    text-decoration: none;
+    width: 100%;
+    height: 3rem;
+
+    nav {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sections {
+        width: 75%;
+        height: 100%;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .section {
+            color: $main-color;
+
+            a {
+                color: $main-color;
+            }
         }
     }
 }

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="273.71875"
+   height="273.71875"
+   viewBox="0 0 273.71875 273.71875"
+   sodipodi:docname="Ícone pessoa.png"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1"
+     transform="translate(-15.206597,-15.713484)">
+    <rect
+       style="fill:none"
+       id="rect1"
+       width="273.71875"
+       height="273.71875"
+       x="15.206597"
+       y="15.713484" />
+    <path
+       style="fill:#ffffff"
+       d="m 79.936763,237.93799 c 0,-4.93707 2.99485,-17.9849 5.599141,-24.39411 7.78221,-19.15213 24.621456,-34.55025 45.234206,-41.363 6.54357,-2.16272 9.571,-2.54533 20.66665,-2.61186 10.9621,-0.0657 14.17571,0.2883 20.5,2.25845 12.99359,4.04777 20.594,8.68316 30.53176,18.62092 12.82582,12.82583 19.33528,26.26305 21.02377,43.39856 l 0.70289,7.1332 H 152.06597 79.936763 Z m 61.499997,-85.34681 c -22.45204,-5.47327 -37.54636,-28.22002 -33.68164,-50.75735 5.06614,-29.543485 36.55259,-46.068679 63.48261,-33.317913 17.33948,8.209854 28.14926,28.531422 24.98945,46.978273 -2.46175,14.3716 -10.98799,26.47818 -23.08168,32.77416 -10.66201,5.55064 -20.9299,6.95045 -31.70874,4.32283 z"
+       id="path1" />
+  </g>
+</svg>
