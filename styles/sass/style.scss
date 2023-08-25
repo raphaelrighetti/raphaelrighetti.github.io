@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
-$main-color: #fff;
-$normal-font-size: 1rem;
-$normal-font-size-hover: calc($normal-font-size + .2rem);
-$title-font-size: 1.6rem;
-$title-font-size-hover: calc($title-font-size + .2rem);
+@import './global-variables.scss';
 
 body {
     height: 100svh;
     font-family: 'Open Sans', sans-serif;
+    font-size: $normal-font-size;
     line-height: 1.35rem;
     color: $main-color;
     display: grid;

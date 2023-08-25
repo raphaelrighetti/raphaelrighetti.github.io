@@ -1,0 +1,85 @@
+@import './global-variables.scss';
+
+$light-color: #464646;
+$dark-color: #363636;
+$border-color: #222;
+
+.contato-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr repeat(2, 1fr);
+    align-items: center;
+    height: 100%;
+
+    .email-div {
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        align-items: center;
+        text-align: center;
+        height: 100%;
+
+        .contato-message {
+            grid-row: 2/3;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .email-field {
+            grid-row: 3/4;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: 1fr;
+            align-items: center;
+            max-width: 678px;
+            height: fit-content;
+            margin-inline: auto;
+            box-sizing: border-box;
+            background-color: $dark-color;
+            border: 2px solid $border-color;
+            border-radius: 2rem;
+        
+            p {
+                grid-column: 1/10;
+                font-weight: 300;
+                font-style: italic;
+                margin-left: 1rem;
+            }
+        
+            button {
+                grid-column: 10/11;
+                background-color: $light-color;
+                border-left: solid 2px $border-color;
+                border-top-right-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+        
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+
+    .links-div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 75%;
+        max-width: 678px;
+        margin-inline: auto;
+
+        a {
+            font-size: $title-font-size;
+            text-decoration: underline;
+            height: 3rem;
+            transition: 200ms;
+    
+            &:hover {
+                font-size: $title-font-size-hover;
+            }
+        }
+    }
+}
