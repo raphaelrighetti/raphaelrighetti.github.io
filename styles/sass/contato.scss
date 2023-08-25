@@ -72,14 +72,27 @@ $border-color: #222;
         margin-inline: auto;
 
         a {
-            font-size: $title-font-size;
-            text-decoration: underline;
-            height: 3rem;
+            font-size: 5rem;
+            color: $main-color;
             transition: 200ms;
     
             &:hover {
-                font-size: $title-font-size-hover;
+                font-size: 5.5rem;
             }
         }
+    }
+}
+
+.material-symbols-outlined {
+    font-size: 5rem;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    transition: 200ms;
+
+    &:hover {
+        font-size: 5.5rem;
     }
 }
