@@ -1,0 +1,34 @@
+.experiencia-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+}
+.experiencia-cards .experiencia-card {
+  width: 75%;
+  max-width: 678px;
+  box-sizing: border-box;
+}
+.experiencia-cards .experiencia-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.experiencia-cards .experiencia-card header .experiencia-title {
+  font-size: 1.6rem;
+}
+.experiencia-cards .experiencia-card header .experiencia-tempo {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.experiencia-cards .experiencia-card .experiencia-activities {
+  list-style: disc;
+  margin-top: 2rem;
+  padding-inline: 2rem;
+  box-sizing: border-box;
+}
+.experiencia-cards .experiencia-card .experiencia-activities .experiencia-activity {
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=experiencia.css.map */

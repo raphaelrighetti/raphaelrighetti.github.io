@@ -1,0 +1,40 @@
+@import "./global-variables.scss";
+
+.experiencia-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+
+    .experiencia-card {
+        width: 75%;
+        max-width: 678px;
+        box-sizing: border-box;
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .experiencia-title {
+                font-size: $title-font-size;
+            }
+
+            .experiencia-tempo {
+                font-size: $normal-font-size;
+                font-weight: 700;
+            }
+        }
+    
+        .experiencia-activities {
+            list-style: disc;
+            margin-top: 2rem;
+            padding-inline: 2rem;
+            box-sizing: border-box;
+            
+            .experiencia-activity {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
