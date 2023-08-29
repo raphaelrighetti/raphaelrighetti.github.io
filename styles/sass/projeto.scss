@@ -1,0 +1,75 @@
+@import "./global-variables.scss";
+
+.projeto-cards {
+    max-width: 80%;
+    height: 100%;
+    margin-inline: auto;
+    position: relative;
+
+    .projeto-card-wrapper {
+        height: 100%;
+        overflow-x: auto;
+
+        .projeto-card-carousel {
+            height: 100%;
+            display: flex;
+            flex-flow: row nowrap;
+
+            .projeto-card {
+                width: 100%;
+                padding: 0 25%;
+                display: grid;
+                grid-template-rows: repeat(10, 1fr);
+                align-items: center;
+                position: relative;
+                box-sizing: border-box;
+
+                .projeto-title {
+                    grid-row: 1/2;
+                }
+
+                .projeto-content {
+                    grid-row: 2/8;
+                    position: relative;
+                    text-align: left;
+
+                    .projeto-description-div {
+                        width: 100%;
+                        height: 100%;
+                        overflow-y: auto;
+                        position: absolute;
+                        top: 0;
+                        background: url('../../img/vollmed-docs-screenshot.png'), #242424cc;
+                        background-size: cover;
+
+                        .projeto-description {
+                            z-index: 1;
+                            padding: .5rem 10%;
+                        }
+                    }
+
+                    .projeto-screenshot {
+                        visibility: hidden;
+                        z-index: 0;
+                        width: 100%;
+                        height: calc(100% + 1rem);
+                    }
+                }
+
+                .projeto-tecnologies {
+                    grid-row: 8/9;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+
+                .projeto-repository {
+                    position: absolute;
+                    top: 1rem;
+                    right: 25%;
+                }
+            }
+        }
+    }
+}
