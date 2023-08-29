@@ -32,7 +32,11 @@ function fixCurrentIndex() {
 function centerCard() {
   cards.forEach(item => item.classList.remove('current'));
 
-  const currentCard = cards[currentIndex];
+  window.scroll({ behavior: 'smooth' });
 
-  currentCard.scrollIntoView({ block: 'end', inline: 'center' });
+  cards[currentIndex].scrollIntoView({
+    block: 'end',
+    inline: 'center',
+    behavior: 'smooth',
+  });
 }
