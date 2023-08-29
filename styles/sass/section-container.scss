@@ -11,6 +11,7 @@ $bg-color: #242424fd;
     background-color: $bg-color;
     box-shadow: 0px -2rem 2.5rem 2rem $bg-color;
     transition: all .3s ease-out;
+    box-sizing: border-box;
 
     .section-header {
         text-align: center;

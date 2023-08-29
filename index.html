@@ -96,10 +96,46 @@
         </header>
 
         <div class="projeto-cards">
+            <button class="projeto-button previous" aria-label="Botão projeto anterior">⇦</button>
+            <button class="projeto-button next" aria-label="Botão próximo projeto">⇨</button>
             <div class="projeto-card-wrapper">
                 <div class="projeto-card-carousel">
-                    <div class="projeto-card projeto-card-current">
+                    <div class="projeto-card current">
                         <h4 class="projeto-title">Voll.med API</h4>
+
+                        <a class="projeto-repository" href="https://github.com/raphaelrighetti/voll.med" target="_blank"
+                            title="Link do repositório do projeto">Link do
+                            Repositório</a>
+
+                        <div class="projeto-content">
+                            <img class="projeto-screenshot" src="./img/vollmed-docs-screenshot.png"
+                                alt="Screenshot da documentação da Voll.med API">
+
+                            <div class="projeto-description-div">
+                                <p class="projeto-description">
+                                    Uma API REST de um consultório médico fictício, focada no
+                                    agendamento eficiente de consultas.
+                                    <br><br>
+                                    Conta com funcionalidades
+                                    de criação de contas de usuário, agendamento de consultas com
+                                    médicos especializados em horários disponíveis e a
+                                    implementação de camadas de segurança usando tokens JWT.
+                                    <br><br>
+                                    A solução também incorpora práticas de qualidade, como testes de unidade
+                                    abrangentes,
+                                    garantindo robustez e confiabilidade.
+                                </p>
+                            </div>
+                        </div>
+
+                        <p class="projeto-tecnologies">
+                            <span>Tecnologias utilizadas:</span>
+                            Java, Spring (Boot, Web, Data, Security...), Docker, MySQL
+                        </p>
+                    </div>
+
+                    <div class="projeto-card">
+                        <h4 class="projeto-title">TESTE</h4>
 
                         <a class="projeto-repository" href="https://github.com/raphaelrighetti/voll.med" target="_blank"
                             title="Link do repositório do projeto">Link do
@@ -228,6 +264,7 @@
 
     <script src="./js/showSection.js"></script>
     <script src="./js/copyEmailToClipboard.js"></script>
+    <script src="./js/projetoCarousel.js"></script>
 </body>
 
 </html>

@@ -1,19 +1,39 @@
 .projeto-cards {
   max-width: 80%;
-  height: 100%;
+  height: 90%;
   margin-inline: auto;
   position: relative;
 }
+.projeto-cards .projeto-button {
+  z-index: 1;
+  font-size: 5rem;
+  color: #fff;
+  height: 100%;
+  position: absolute;
+  top: -5%;
+  transition: 200ms;
+}
+.projeto-cards .projeto-button:hover {
+  font-size: 5.5rem;
+}
+.projeto-cards .projeto-button.previous {
+  left: 5%;
+}
+.projeto-cards .projeto-button.next {
+  right: 5%;
+}
 .projeto-cards .projeto-card-wrapper {
   height: 100%;
-  overflow-x: auto;
+  overflow: hidden;
 }
 .projeto-cards .projeto-card-wrapper .projeto-card-carousel {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-flow: row nowrap;
 }
 .projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card {
+  flex-shrink: 0;
   width: 100%;
   padding: 0 25%;
   display: grid;
@@ -63,7 +83,6 @@
 }
 .projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-content .projeto-screenshot {
   visibility: hidden;
-  z-index: 0;
   width: 100%;
   height: calc(100% + 1rem);
 }

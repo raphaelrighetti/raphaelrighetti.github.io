@@ -2,20 +2,44 @@
 
 .projeto-cards {
     max-width: 80%;
-    height: 100%;
+    height: 90%;
     margin-inline: auto;
     position: relative;
 
+    .projeto-button {
+        z-index: 1;
+        font-size: 5rem;
+        color: $main-color;
+        height: 100%;
+        position: absolute;
+        top: -5%;
+        transition: 200ms;
+
+        &:hover {
+            font-size: 5.5rem;
+        }
+
+        &.previous {
+            left: 5%;
+        }
+
+        &.next {
+            right: 5%;
+        }
+    }
+
     .projeto-card-wrapper {
         height: 100%;
-        overflow-x: auto;
+        overflow: hidden;
 
         .projeto-card-carousel {
+            width: 100%;
             height: 100%;
             display: flex;
             flex-flow: row nowrap;
 
             .projeto-card {
+                flex-shrink: 0;
                 width: 100%;
                 padding: 0 25%;
                 display: grid;
@@ -70,7 +94,6 @@
 
                     .projeto-screenshot {
                         visibility: hidden;
-                        z-index: 0;
                         width: 100%;
                         height: calc(100% + 1rem);
                     }
