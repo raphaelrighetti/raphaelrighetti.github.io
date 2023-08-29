@@ -19,16 +19,34 @@
                 width: 100%;
                 padding: 0 25%;
                 display: grid;
+                grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(10, 1fr);
                 align-items: center;
                 position: relative;
                 box-sizing: border-box;
 
                 .projeto-title {
+                    grid-column: 1/2;
                     grid-row: 1/2;
                 }
 
+                .projeto-repository {
+                    font-size: $normal-font-size;
+                    font-style: italic;
+                    text-decoration: underline;
+                    grid-column: 2/3;
+                    grid-row: 1/2;
+                    text-align: right;
+                    width: 100%;
+                    transition: 200ms;
+
+                    &:hover {
+                        font-size: $normal-font-size-hover;
+                    }
+                }
+
                 .projeto-content {
+                    grid-column: 1/3;
                     grid-row: 2/8;
                     position: relative;
                     text-align: left;
@@ -36,14 +54,16 @@
                     .projeto-description-div {
                         width: 100%;
                         height: 100%;
+                        display: grid;
+                        grid-template-rows: 1fr 6fr 1fr;
                         overflow-y: auto;
                         position: absolute;
                         top: 0;
-                        background: url('../../img/vollmed-docs-screenshot.png'), #242424cc;
+                        background: url('../../img/vollmed-docs-screenshot-bg.png');
                         background-size: cover;
 
                         .projeto-description {
-                            z-index: 1;
+                            grid-row: 2/3;
                             padding: .5rem 10%;
                         }
                     }
@@ -57,17 +77,12 @@
                 }
 
                 .projeto-tecnologies {
+                    grid-column: 1/3;
                     grid-row: 8/9;
 
                     span {
                         font-weight: 700;
                     }
-                }
-
-                .projeto-repository {
-                    position: absolute;
-                    top: 1rem;
-                    right: 25%;
                 }
             }
         }

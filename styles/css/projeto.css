@@ -17,15 +17,31 @@
   width: 100%;
   padding: 0 25%;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(10, 1fr);
   align-items: center;
   position: relative;
   box-sizing: border-box;
 }
 .projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-title {
+  grid-column: 1/2;
   grid-row: 1/2;
 }
+.projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-repository {
+  font-size: 1rem;
+  font-style: italic;
+  text-decoration: underline;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: right;
+  width: 100%;
+  transition: 200ms;
+}
+.projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-repository:hover {
+  font-size: 1.2rem;
+}
 .projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-content {
+  grid-column: 1/3;
   grid-row: 2/8;
   position: relative;
   text-align: left;
@@ -33,14 +49,16 @@
 .projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-content .projeto-description-div {
   width: 100%;
   height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
   overflow-y: auto;
   position: absolute;
   top: 0;
-  background: url("../../img/vollmed-docs-screenshot.png"), rgba(36, 36, 36, 0.8);
+  background: url("../../img/vollmed-docs-screenshot-bg.png");
   background-size: cover;
 }
 .projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-content .projeto-description-div .projeto-description {
-  z-index: 1;
+  grid-row: 2/3;
   padding: 0.5rem 10%;
 }
 .projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-content .projeto-screenshot {
@@ -50,15 +68,11 @@
   height: calc(100% + 1rem);
 }
 .projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-tecnologies {
+  grid-column: 1/3;
   grid-row: 8/9;
 }
 .projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-tecnologies span {
   font-weight: 700;
-}
-.projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card .projeto-repository {
-  position: absolute;
-  top: 1rem;
-  right: 25%;
 }
 
 /*# sourceMappingURL=projeto.css.map */
