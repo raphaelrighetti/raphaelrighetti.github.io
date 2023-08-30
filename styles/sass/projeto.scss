@@ -20,11 +20,11 @@
         }
 
         &.previous {
-            left: 5%;
+            left: 2.5%;
         }
 
         &.next {
-            right: 5%;
+            right: 2.5%;
         }
     }
 
@@ -81,6 +81,7 @@
                         height: 100%;
                         display: grid;
                         grid-template-rows: 1fr 6fr 1fr;
+                        align-items: center;
                         overflow-y: auto;
                         position: absolute;
                         top: 0;

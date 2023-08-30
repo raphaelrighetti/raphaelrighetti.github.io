@@ -17,10 +17,10 @@
   font-size: 5.5rem;
 }
 .projeto-cards .projeto-button.previous {
-  left: 5%;
+  left: 2.5%;
 }
 .projeto-cards .projeto-button.next {
-  right: 5%;
+  right: 2.5%;
 }
 .projeto-cards .projeto-card-wrapper {
   height: 100%;
@@ -72,6 +72,7 @@
   height: 100%;
   display: grid;
   grid-template-rows: 1fr 6fr 1fr;
+  align-items: center;
   overflow-y: auto;
   position: absolute;
   top: 0;

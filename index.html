@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/css/projeto.css">
     <link rel="stylesheet" href="./styles/css/experiencia.css">
     <link rel="stylesheet" href="./styles/css/contato.css">
+    <link rel="stylesheet" href="./styles/css/mobile.css">
     <title>Portfólio - Raphael Righetti Ramos</title>
 </head>
 
@@ -25,6 +26,16 @@
             Your browser does not support the video tag.
         </video>
     </div>
+
+    <button class="modal-button">
+        <span class="material-symbols-outlined closed">
+            menu
+        </span>
+
+        <span class="material-symbols-outlined open">
+            close
+        </span>
+    </button>
 
     <header class="main-header">
         <h1 class="title">Raphael <span>Righetti Ramos</span></h1>
@@ -97,16 +108,15 @@
         </header>
 
         <div class="projeto-cards">
-            <button class="projeto-button previous" aria-label="Botão projeto anterior">⇦</button>
-            <button class="projeto-button next" aria-label="Botão próximo projeto">⇨</button>
+            <button class="projeto-button previous" aria-label="Botão projeto anterior">←</button>
+            <button class="projeto-button next" aria-label="Botão próximo projeto">→</button>
             <div class="projeto-card-wrapper">
                 <div class="projeto-card-carousel">
                     <div class="projeto-card current">
                         <h4 class="projeto-title">Voll.med API</h4>
 
                         <a class="projeto-repository" href="https://github.com/raphaelrighetti/voll.med" target="_blank"
-                            title="Link do repositório do projeto">Link do
-                            Repositório</a>
+                            title="Link do repositório do projeto no GitHub">GitHub</a>
 
                         <div class="projeto-content">
                             <img class="projeto-screenshot" src="./img/vollmed-docs-screenshot.png"
@@ -210,7 +220,7 @@
         </div>
     </section>
 
-    <footer class="main-footer">
+    <section class="section-list-container">
         <nav>
             <ul class="sections">
                 <li class="section">
@@ -227,11 +237,12 @@
                 </li>
             </ul>
         </nav>
-    </footer>
+    </section>
 
     <script src="./js/showSection.js"></script>
     <script src="./js/copyEmailToClipboard.js"></script>
     <script src="./js/projetoCarousel.js"></script>
+    <script src="./js/openModal.js"></script>
 </body>
 
 </html>

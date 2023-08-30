@@ -1,0 +1,149 @@
+@import "./global-variables.scss";
+
+.modal-button {
+    z-index: 1;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: none;
+    color: $main-color;
+
+    .closed, .open {
+        font-size: 3rem;
+    }
+
+    .closed {
+        display: block;
+    }
+
+    .open {
+        display: none;
+    }
+
+    &.active {
+        .closed {
+            display: none;
+        }
+
+        .open {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 852px) {
+    .habilidades {
+
+        .tecnologies {
+            font-size: 3rem;
+        }
+    }
+
+    .projeto-cards {
+        .projeto-card-wrapper {
+            .projeto-card-carousel {
+                .projeto-card {
+                    padding: 0 5%;
+                }
+            }
+        }
+
+        .projeto-button {
+            font-size: 3rem;
+
+            &:hover {
+                font-size: 3.5rem;
+            }
+
+            &.previous {
+                left: -10%;
+            }
+
+            &.next {
+                right: -10%;
+            }
+        }
+    }
+
+    .experiencia-card {
+        font-size: .85rem;
+        width: 65%;
+        height: 80%;
+
+        header {
+            .experiencia-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        .experiencia-activities {
+            .experiencia-activity {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+
+    .modal-button {
+        display: block;
+    }
+
+    .section-list-container {
+        display: none;
+        grid-row: 1/4;
+        width: 100%;
+        height: 100%;
+        background-color: #242424fd;
+
+        .sections {
+            display: none;
+            flex-direction: column;
+            height: 75%;
+        }
+
+        &.modal-active {
+            display: block;
+
+            .sections {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .section-container {
+        .section-header {
+            h2 {
+                grid-column: 1/4;
+            }
+        }
+    }
+
+    .projeto-cards {
+        .projeto-button {
+            font-size: 3rem;
+            top: auto;
+            bottom: 0;
+            height: fit-content;
+
+            &:hover {
+                font-size: 3.5rem;
+            }
+
+            &.previous {
+                left: 0;
+            }
+
+            &.next {
+                right: 0;
+            }
+        }
+
+        .projeto-card-wrapper {
+            .projeto-card-carousel {
+                .projeto-card {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

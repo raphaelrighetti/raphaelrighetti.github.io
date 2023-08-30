@@ -29,6 +29,8 @@
 .habilidades p {
   grid-column: 1/2;
   grid-row: 9/10;
+  max-width: 80%;
+  margin-inline: auto;
 }
 
 /*# sourceMappingURL=habilidades.css.map */

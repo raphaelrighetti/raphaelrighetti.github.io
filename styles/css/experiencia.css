@@ -23,8 +23,10 @@
 }
 .experiencia-cards .experiencia-card .experiencia-activities {
   list-style: disc;
+  height: 100%;
   margin-top: 2rem;
   padding-inline: 2rem;
+  overflow-y: auto;
   box-sizing: border-box;
 }
 .experiencia-cards .experiencia-card .experiencia-activities .experiencia-activity {
