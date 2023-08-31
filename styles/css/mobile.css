@@ -95,6 +95,26 @@
   .projeto-cards .projeto-card-wrapper .projeto-card-carousel .projeto-card {
     padding: 0;
   }
+  .experiencia-cards .experiencia-card {
+    width: 90%;
+  }
+  .experiencia-cards .experiencia-card header .experiencia-title {
+    font-size: 1.2rem;
+  }
+  .experiencia-cards .experiencia-card header .experiencia-tempo {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 340px) {
+  .experiencia-cards .experiencia-card {
+    width: 90%;
+  }
+  .experiencia-cards .experiencia-card header .experiencia-title {
+    font-size: 1rem;
+  }
+  .experiencia-cards .experiencia-card header .experiencia-tempo {
+    font-size: 0.6rem;
+  }
 }
 
 /*# sourceMappingURL=mobile.css.map */

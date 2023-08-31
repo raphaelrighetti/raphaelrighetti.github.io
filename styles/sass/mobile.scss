@@ -146,4 +146,38 @@
             }
         }
     }
+
+    .experiencia-cards {
+        .experiencia-card {
+            width: 90%;
+
+            header {
+                .experiencia-title {
+                    font-size: 1.2rem;
+                }
+    
+                .experiencia-tempo {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .experiencia-cards {
+        .experiencia-card {
+            width: 90%;
+
+            header {
+                .experiencia-title {
+                    font-size: 1rem;
+                }
+    
+                .experiencia-tempo {
+                    font-size: .6rem;
+                }
+            }
+        }
+    }
 }
